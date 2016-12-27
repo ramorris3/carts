@@ -5,7 +5,17 @@ __lua__
 room={x=0,y=0} 
 
 -- entities --
-
+player={
+ init=function(this)
+ 	
+ end,
+ update=function(this)
+ 
+ end,
+ draw=function(this)
+ 
+ end
+}
 
 -- core --
 function _init()
@@ -18,6 +28,7 @@ end
 
 function _draw()
  cls()
+ 
  -- draw terrain
  map(room.x*16,room.y*16,0,0,16,16,1)
 end
